@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
-import { ExampleService1 } from './example.service copy';
+import { ExampleService1 } from '../bai4/example.service copy';
 import { ExampleController1 } from './example.controller copy';
-import { DatabaseModule } from './database.module';
+import { DatabaseModule } from '../bai4/database.module';
 
 @Module({
   imports: [

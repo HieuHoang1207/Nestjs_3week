@@ -6,11 +6,11 @@ import { Connection } from 'typeorm';
 export class ExampleService1 {
   constructor(
     @Inject('DATABASE_CONNECTION')
-    private readonly connection: Connection,
+    private readonly connection1: Connection,
   ) {}
 
-  async findData() {
+  async findData1() {
     // Truy vấn đơn giản để kiểm tra kết nối
-    return await this.connection.query('SELECT * FROM hotel_manager.users;');
+    return await this.connection1.query('SELECT * FROM hotel_manager.users;');
   }
 }

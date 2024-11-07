@@ -4,10 +4,10 @@ import { ExampleService1 } from './example.service copy';
 
 @Controller('example1')
 export class ExampleController1 {
-  constructor(private readonly exampleService: ExampleService1) {}
+  constructor(private readonly exampleService1: ExampleService1) {}
 
-  @Get()
-  async testConnection() {
-    return await this.exampleService.findData();
+  @Get(':id')
+  async testConnection1() {
+    return await this.exampleService1.findData1();
   }
 }

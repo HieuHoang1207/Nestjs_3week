@@ -17,6 +17,7 @@ import { I18nModule } from './bai6/i18n.module';
 import { AllExceptionsFilter } from './bai6/all-exceptions.filter';
 import { TestController } from './bai6/test.controller';
 import { AppModuleBai8 } from './bai8/app.module';
+import { DatabaseModule12 } from './bai12/database.module';
 import { APP_FILTER } from '@nestjs/core';
 import { LoggerMiddleware } from './logger/logger.middleware';
 @Module({
@@ -34,6 +35,7 @@ import { LoggerMiddleware } from './logger/logger.middleware';
     ExampleModule4,
     I18nModule,
     AppModuleBai8,
+    DatabaseModule12,
   ],
   controllers: [
     AppController,
@@ -50,14 +52,14 @@ import { LoggerMiddleware } from './logger/logger.middleware';
   providers: [
     AppService,
     ExampleService,
-    {
-      provide: APP_FILTER,
-      useClass: AllExceptionsFilter,
-    },
+    // {
+    //   provide: APP_FILTER,
+    //   useClass: AllExceptionsFilter,
+    // },
   ],
 })
 export class AppModule {
-  configure(consumer: MiddlewareConsumer) {
-    consumer.apply(LoggerMiddleware).forRoutes('*'); // Áp dụng middleware cho tất cả routes
-  }
+  // configure(consumer: MiddlewareConsumer) {
+  //   consumer.apply(LoggerMiddleware).forRoutes('*'); // Áp dụng middleware cho tất cả routes
+  // }
 }
