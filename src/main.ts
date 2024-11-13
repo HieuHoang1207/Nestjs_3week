@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -9,7 +10,6 @@ async function bootstrap() {
   //   req.user = { id: 1, role: 'admin' }; // Thay đổi vai trò theo nhu cầu
   //   next();
   // });
-
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();

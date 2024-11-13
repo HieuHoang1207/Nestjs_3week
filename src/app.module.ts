@@ -18,6 +18,8 @@ import { AllExceptionsFilter } from './bai6/all-exceptions.filter';
 import { TestController } from './bai6/test.controller';
 import { AppModuleBai8 } from './bai8/app.module';
 import { DatabaseModule12 } from './bai12/database.module';
+import { AppModuleBai14 } from './bai14/app.module';
+import { AppModuleBai15 } from './bai15/app.module';
 import { APP_FILTER } from '@nestjs/core';
 import { LoggerMiddleware } from './logger/logger.middleware';
 @Module({
@@ -36,6 +38,8 @@ import { LoggerMiddleware } from './logger/logger.middleware';
     I18nModule,
     AppModuleBai8,
     DatabaseModule12,
+    AppModuleBai14,
+    AppModuleBai15,
   ],
   controllers: [
     AppController,

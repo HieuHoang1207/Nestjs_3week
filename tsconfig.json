@@ -18,12 +18,12 @@
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
 
-    // Thêm phần dưới để hỗ trợ tốt hơn khi làm việc với module
-    "esModuleInterop": true, // Cần cho việc sử dụng `import` trong TypeScript
-    "moduleResolution": "node", // Đảm bảo TypeScript xử lý đúng các mô-đun như Node.js
-    "resolveJsonModule": true, // Nếu bạn cần import JSON files
-    "skipDefaultLibCheck": true, // Tránh kiểm tra các thư viện mặc định khi compile
-    "lib": ["es2021", "esnext.asynciterable"] // Thêm các thư viện cần thiết cho các tính năng mới
+    // // Thêm phần dưới để hỗ trợ tốt hơn khi làm việc với module
+    // "esModuleInterop": true, // Cần cho việc sử dụng `import` trong TypeScript
+    // "moduleResolution": "node", // Đảm bảo TypeScript xử lý đúng các mô-đun như Node.js
+    // "resolveJsonModule": true, // Nếu bạn cần import JSON files
+    // "skipDefaultLibCheck": true, // Tránh kiểm tra các thư viện mặc định khi compile
+    // "lib": ["es2021", "esnext.asynciterable"] // Thêm các thư viện cần thiết cho các tính năng mới
   },
   "include": ["src/**/*.ts"], // Đảm bảo chỉ biên dịch các file TypeScript
   "exclude": ["node_modules", "dist"] // Không biên dịch thư mục dist và node_modules
