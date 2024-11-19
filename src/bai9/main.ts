@@ -1,6 +1,6 @@
 // // src/bai9/main.ts
-// process.env.NODE_ENV = 'development';
-process.env.NODE_ENV = 'production';
+process.env.NODE_ENV = 'development';
+// process.env.NODE_ENV = 'production';
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ILogger } from './logger.interface';

@@ -20,3 +20,5 @@ export class CacheController {
     return cachedValue ? cachedValue : `No cache found for key: ${key}`;
   }
 }
+//http://localhost:3000/cache/user123/JohnDoe POST
+//http://localhost:3000/cache/user123 GET

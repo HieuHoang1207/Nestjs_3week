@@ -15,3 +15,4 @@ async function bootstrap() {
   await app.listen(3000);
 }
 bootstrap();
+//npx ts-node .\src\bai17\main.ts

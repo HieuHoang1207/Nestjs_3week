@@ -16,7 +16,7 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false,
+    "noFallthroughCasesInSwitch": false
 
     // // Thêm phần dưới để hỗ trợ tốt hơn khi làm việc với module
     // "esModuleInterop": true, // Cần cho việc sử dụng `import` trong TypeScript

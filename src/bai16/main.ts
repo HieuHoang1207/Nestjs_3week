@@ -7,9 +7,9 @@ async function bootstrap() {
 
   const configService = app.get(ConfigService);
   const port = configService.get<number>('PORT'); // Lấy cổng từ biến môi trường
-  console.log(port);
+  console.log('http://localhost:' + port);
   await app.listen(port);
 }
 bootstrap();
-//cross-env NODE_ENV=local ts-node src/bai16/main.ts
-//cross-env NODE_ENV=dev ts-node src/bai16/main.ts
+//npm run start:local
+//npm run start:devtest
