@@ -11,8 +11,8 @@ export class User {
   @Exclude({ toClassOnly: true }) // Exclude password cho tất cả các nhóm (được xử lý trong @Expose)
   password: string;
 
-  @Expose({ groups: ['admin'] }) // Expose password chỉ cho admin
-  @Exclude({ toPlainOnly: true }) // Không include password khi serialize về plain object
+  @Expose({ groups: ['admin'] })
+  @Exclude({ toPlainOnly: true })
   @Transform(({ value }) => value.toISOString(), { groups: ['admin'] }) // Format timestamp cho admin
   timestamp: Date;
 

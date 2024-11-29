@@ -4,10 +4,11 @@ import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(Bai7);
-
+  app.useGlobalPipes(new ValidationPipe({ transform: true }));
   await app.listen(process.env.PORT ?? 3000);
 }
 bootstrap();
 //npx ts-node .\src\bai7\main.ts
 //http://localhost:3000/list?id=8
 //http://localhost:3000/list?name=abc
+//http://localhost:3000/123

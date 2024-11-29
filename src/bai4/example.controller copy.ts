@@ -11,3 +11,4 @@ export class ExampleController1 {
     return await this.exampleService1.findData1();
   }
 }
+//http://localhost:3000/example1/1

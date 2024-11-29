@@ -10,6 +10,8 @@
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "nest start",
     "start:dev": "nest start --watch",
+    "startvercel": "node dist/main.js",
+    "vercel-build": "tsc",
     "start:local": "cross-env NODE_ENV=local ts-node src/bai16/main.ts",
     "start:devtest": "cross-env NODE_ENV=dev ts-node src/bai16/main.ts",
     "start:debug": "nest start --debug --watch",
